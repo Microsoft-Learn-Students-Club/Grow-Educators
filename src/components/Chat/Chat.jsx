@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../assets/Logos/whatsapp-logo.png'
 
 const Chat = () => {
-  const phoneNumber = '#';
+  const phoneNumber = '7506486342';
 
   return (
     <div >

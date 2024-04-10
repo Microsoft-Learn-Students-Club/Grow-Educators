@@ -2,48 +2,47 @@ import React from 'react';
 export default function Feedback() {
     return (
         <>
-            <div className=" bg-columbia-blue border-2 p-8 rounded-lg max-w-3xl mx-auto mt-10">
-                <h1 className="italic text-3xl font-bold text-center mb-8 ">Feedback</h1>
+            <div className="bg-gray-800 border-2 p-8 rounded-lg max-w-3xl mx-auto mt-10">
+                <h1 className="italic text-3xl text-white font-bold text-center mb-8 ">Feedback</h1>
                 <form className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label htmlFor="feedbackFormName" className="block font-semibold pb-1">Name</label>
-                            <input id="feedbackFormName" type="text" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-cerulean" placeholder="Your name" />
+                            <label htmlFor="feedbackFormFirstName" className="block text-white font-semibold pb-1">First Name</label>
+                            <input id="feedbackFormFirstName" type="text" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-gray-900" placeholder="First name" />
                         </div>
                         <div>
-                            <label htmlFor="feedbackFormEmail" className="block font-semibold pb-1">Email</label>
-                            <input id="feedbackFormEmail" type="email" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-cerulean" placeholder="Your email" />
+                            <label htmlFor="feedbackFormLastName" className="block text-white font-semibold pb-1">Last Name</label>
+                            <input id="feedbackFormLastName" type="email" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-gray-900" placeholder="Last email" />
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label htmlFor="feedbackFormPhone" className="block text-white font-semibold pb-1">Mobile Number</label>
+                            <input id="feedbackFormPhone" type="text" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-gray-900" placeholder="Enter 10-digit Mobile No." />
+                        </div>
+                        <div>
+                            <label htmlFor="feedbackFormClass" className="block text-white font-semibold pb-1">Class</label>
+                            <input id="feedbackFormClass" type="email" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-gray-900" placeholder="Select Class" />
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="feedbackFormSubject" className="block font-semibold pb-1">Subject</label>
-                        <input id="feedbackFormSubject" type="text" className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-cerulean" placeholder="Subject of your feedback" />
-                    </div>
-
-                    <div>
-                        <label htmlFor="feedbackFormMessage" className="block font-semibold pb-1">Message</label>
-                        <textarea id="feedbackFormMessage" rows={3} className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-cerulean" placeholder="Your message"></textarea>
-                    </div>
-
-                    <div>
-                        <label htmlFor="feedbackFormRating" className="block font-semibold pb-1">Rating</label>
-                        <select id="feedbackFormRating" className="w-full rounded-2xl border border-none focus:border-blue-500 px-4 py-2  shadow-md shadow-cerulean">
-                            <option value="5">Excellent</option>
-                            <option value="4">Good</option>
-                            <option value="3">Average</option>
-                            <option value="2">Poor</option>
-                            <option value="1">Terrible</option>
+                        <label htmlFor="feedbackFormGoal" className="block text-white font-semibold pb-1">Goal</label>
+                        <select id="feedbackFormGoal" className="w-full rounded-2xl border border-none focus:border-blue-500 px-4 py-2  shadow-md shadow-gray-900">
+                            <option value="6">Select Your Goal</option>
+                            <option value="5">School</option>
+                            <option value="4">NEET</option>
+                            <option value="3">JEE</option>
+                            <option value="2">MHT-CET</option>
+                            <option value="1">Tech</option>
                         </select>
                     </div>
-
-                    <div className="flex items-center">
-                        <input type="checkbox" id="feedbackFormCheckbox" className="rounded border-gray-300 focus:border-blue-500" />
-                        <label htmlFor="feedbackFormCheckbox" className="ml-2">I agree with all term and Condition</label>
+                    <div>
+                        <label htmlFor="feedbackFormMessage" className="block text-white font-semibold pb-1">Message</label>
+                        <textarea id="feedbackFormMessage" rows={3} className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-gray-900" placeholder="Your message"></textarea>
                     </div>
-
-                    <button type="submit" className="text-black w-full bg-indigo-dye shadow-lg shadow-cerulean font-semibold py-2 rounded-lg hover:bg-cerulean transition duration-300">Submit Feedback</button>
-
+                    <button type="submit" className="bg-gray-600 w-full shadow-lg shadow-gray-900 text-white font-semibold py-2 rounded-lg hover:bg-sky-700 transition duration-300">Submit Feedback</button>
                 </form>
             </div>
             <br />

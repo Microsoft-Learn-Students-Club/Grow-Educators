@@ -1,11 +1,10 @@
-"use client";
 import "../../../src/index.css";
-// import Navbar from "../common/Navbar";
 import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import Feedback from "../Feedback/Feedback";
 import Card from "../Cards/Card";
 import Features from "../Features/Features";
+import AboutUs from "../../AboutUs/AboutUs"
 
 const Hero = () => {
     return (
@@ -54,11 +53,8 @@ const Hero = () => {
                             A comprehensive resource for connecting you with <br /> the ideal attorney to address all your Educational requirements, <br /> we recognize that selecting the right Teacher can be <br /> an overwhelming and daunting task{" "}
                             and this is precisely <br /> where we step in to alleviate the burden.
                         </p>
-                        <button className="p-2 bg-primary-navy rounded-xl px-4 text-xl font-semibold text-white hover:shadow-xl">
-                            Explore
-                        </button>
                     </div>
-                    <div className="">
+                    <div className="mx-6">
                         <img
                             src="https://images.pexels.com/photos/3231359/pexels-photo-3231359.jpeg?auto=compress&cs=tinysrgb&w=600"
                             width={550}
@@ -72,6 +68,7 @@ const Hero = () => {
             <Card />
             <Features />
             <Feedback />
+            <AboutUs />
         </>
     );
 };
