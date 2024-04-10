@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../../assets/Logos/whatsapp-logo.png'
+
 const Chat = () => {
   const phoneNumber = '#';
 
@@ -12,7 +14,7 @@ const Chat = () => {
         title="Chat with us on WhatsApp!"
         style={{ width: '60px', height: '60px' }}
       >
-        <img src="../../public/whatsapp-logo.png" alt="WhatsApp" className="w-full h-auto" />
+        <img src={logo} alt="WhatsApp" className="w-full h-auto" />
       </a>
     </div>
   );
