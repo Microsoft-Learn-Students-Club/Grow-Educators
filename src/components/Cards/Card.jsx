@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import edu from '../../assests/courses/edu.jpg'
+import edu from '../../assets/courses/edu.jpg'
 
 function Card() {
     return (
@@ -23,14 +23,15 @@ function Card() {
                                 odit dolorem id velit, porro assumenda et hic, suscipit repellat quam aliquid Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Repellat, nisi nesciunt. Cum, maiores sequi eos
                                 ipsum odio laboriosam ullam eum veniam unde, illo nobis corrupti, enim dignissimos adipisci! Minus, nostrum!</p>
-                            <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-5 ">View Courses</button>
-                        </div>
+                            <Link to="/viewcourse">
+                                <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3">View Courses</button>
+                            </Link>                        </div>
                         <div className="bg-pink-100 rounded-3xl p-6 w-full mt-11 lg:w-[430px] md:w-[530px] sm:w-[480px]  sm:mt-24 flex flex-col justify-between ">
                             <h2 className="text-2xl font-bold text-center mb-4 lg:text-3xl md:text-3xl">SCIENCE</h2>
                             <div className=" flex justify-center flex-wrap">
                                 <img src={edu} alt="SCIENCE" className="text-center w-[200px] sm:w-[285px] sm:h-[200px]" />
                             </div>
-                            <ul className="list-disc mt-6">
+                            <ul className="mt-6">
                                 <li className="font-semibold sm:text-xl">XI<sup>th</sup></li>
                                 <li className="font-semibold sm:text-xl">XII<sup>th</sup></li>
                                 <li className="font-semibold sm:text-xl">JEE (MAINS)</li>
@@ -40,7 +41,9 @@ function Card() {
                             <p className="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia nam est quasi
                                 delectus,
                                 odit dolorem id velit, porro assumenda et hic, suscipit repellat quam aliquid.</p>
-                            <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3  ">View Courses</button>
+                            <Link to="/viewcourse">
+                                <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3">View Courses</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -50,7 +53,7 @@ function Card() {
                         <div className=" flex justify-center flex-wrap">
                             <img src={edu} alt="COMMERCE" className="text-center w-[200px] sm:w-[285px] sm:h-[200px]" />
                         </div>
-                        <ul className="list-disc mt-6">
+                        <ul className="mt-6">
                             <li className="font-semibold sm:text-xl">F.Y.J.C</li>
                             <li className="font-semibold sm:text-xl ">S.Y.J.C</li>
                             <li className="font-semibold sm:text-xl">B.COM</li>
@@ -60,14 +63,15 @@ function Card() {
                         <p className="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia nam est quasi
                             delectus,
                             odit dolorem id velit, porro assumenda et hic, suscipit repellat quam aliquid.</p>
-                        <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3 ">View Courses</button>
-                    </div>
+                        <Link to="/viewcourse">
+                            <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3">View Courses</button>
+                        </Link>                    </div>
                     <div className="bg-pink-100 rounded-3xl p-6 w-full mt-11 lg:w-[430px] md:w-[530px]  sm:mt-24 ml-2  sm:w-[480px]  flex flex-col justify-between">
                         <h2 className="text-2xl font-bold text-center mb-4 lg:text-3xl md:text-3xl">TECH</h2>
                         <div className=" flex justify-center flex-wrap">
                             <img src={edu} alt="tech" className="text-center w-[200px] sm:w-[285px] sm:h-[200px]" />
                         </div>
-                        <ul className="list-disc mt-6">
+                        <ul className="mt-6">
                             <li className="font-semibold sm:text-xl">C &amp; C++</li>
                             <li className="font-semibold sm:text-xl">JAVA</li>
                             <li className="font-semibold sm:text-xl">PYTHON</li>
@@ -76,8 +80,9 @@ function Card() {
                         <p className="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia nam est quasi
                             delectus,
                             odit dolorem id velit, porro assumenda et hic, suscipit repellat quam aliquid.</p>
-                        <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3 ">View Courses</button>
-                    </div>
+                        <Link to="/viewcourse">
+                            <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3">View Courses</button>
+                        </Link>                    </div>
                 </div>
                 <h2 className="text-2xl font-bold w-full text-center relative bottom-6 top-5 text-blue-800 sm:text-3xl lg:text-4xl">WHAT'S SPECIAL?</h2>
                 <div className="flex justify-center">

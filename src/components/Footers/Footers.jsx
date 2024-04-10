@@ -26,7 +26,7 @@ const Community = ["Forums", "Chapters", "Events"];
 
 const Footer = () => {
     return (
-        <div className="dark:bg-gray-900 text-white mx-7 rounded-3xl mb-10">
+        <div className=" text-black bg-gray-300 border-gray-200 backdrop-filter backdrop-blur-sm shadow sticky  mx-7 rounded-3xl mb-10">
             <div className="flex lg:flex-row gap-8 items-center justify-between w-11/12 max-w-maxContent text-richblack-400 leading-6 mx-auto relative py-14">
                 <div className="border-b w-[100%] flex flex-col lg:flex-row pb-5 border-richblack-700">
 
@@ -173,25 +173,18 @@ const Footer = () => {
                     </div>
 
                     <div className="text-center flex flex-col sm:flex-row ">
-                        <div className="flex ">
-                            <span> Made with ❤️ </span>
-                            {" "}
-                            <Link to='https://github.com/vivek-panchal' target="__blank" className="text-white hover:underline mr-1"
-                            >
-                                Vivek Panchal
-                            </Link>
-                        </div>
+
                         <span> © 2024 Groww Educators</span>
                     </div>
 
                     <div className="flex items-center">
-                        <a href="https://www.linkedin.com/in/vivekpanchal2608/" className="text-white p-3 hover:bg-richblack-700 rounded-full duration-300" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="text-white p-3 hover:bg-richblack-700 rounded-full duration-300" target="_blank" rel="noopener noreferrer">
                             <ImLinkedin2 size={17} />
                         </a>
-                        <a href="https://www.github.com/vivek-panchal" className="text-white p-3 hover:bg-richblack-700 rounded-full duration-300" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="text-white p-3 hover:bg-richblack-700 rounded-full duration-300" target="_blank" rel="noopener noreferrer">
                             <ImGithub size={17} />
                         </a>
-                        <a href="https://twitter.com/Vivekpanchaal" className="text-white p-3 hover:bg-richblack-700 rounded-full duration-300" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="text-white p-3 hover:bg-richblack-700 rounded-full duration-300" target="_blank" rel="noopener noreferrer">
                             <ImTwitter size={17} />
                         </a>
                     </div>

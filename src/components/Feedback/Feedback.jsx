@@ -1,5 +1,4 @@
 import React from 'react';
-import './feedback.module.css';
 export default function Feedback() {
     return (
         <>
@@ -40,10 +39,10 @@ export default function Feedback() {
 
                     <div className="flex items-center">
                         <input type="checkbox" id="feedbackFormCheckbox" className="rounded border-gray-300 focus:border-blue-500" />
-                        <label htmlFor="feedbackFormCheckbox" className="ml-2">checkbox</label>
+                        <label htmlFor="feedbackFormCheckbox" className="ml-2">I agree with all term and Condition</label>
                     </div>
 
-                    <button type="submit" className="text-black w-full bg-indigo-dye shadow-lg shadow-cerulean text-white font-semibold py-2 rounded-lg hover:bg-cerulean transition duration-300">Submit Feedback</button>
+                    <button type="submit" className="text-black w-full bg-indigo-dye shadow-lg shadow-cerulean font-semibold py-2 rounded-lg hover:bg-cerulean transition duration-300">Submit Feedback</button>
 
                 </form>
             </div>

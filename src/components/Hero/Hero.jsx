@@ -69,9 +69,9 @@ const Hero = () => {
                     </div>
                 </section>
             </div>
-            <Feedback />
             <Card />
             <Features />
+            <Feedback />
         </>
     );
 };
