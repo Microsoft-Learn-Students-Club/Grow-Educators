@@ -1,8 +1,6 @@
 import {
-  RxCrop,
   RxDesktop,
   RxPencil2,
-  RxReader,
   RxRocket,
   RxAccessibility,
 } from "react-icons/rx";

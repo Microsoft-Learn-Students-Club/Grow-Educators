@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Error = () => {
@@ -14,7 +13,7 @@ const Error = () => {
 
                             <div className="-mt-12 ">
                                 <h3 className="text-4xl mb-1 ">
-                                    Look like you're lost
+                                    {`Look like you're lost`}
                                 </h3>
 
                                 <p>The page you are looking for not available!</p>
