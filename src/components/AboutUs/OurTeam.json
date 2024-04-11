@@ -4,41 +4,41 @@
         "name": "Mr. Sachin Yadav",
         "qualification": "BE Computer Science",
         "experience": "7 years",
-        "imgs": "../../assets/Images/sachin.png"
+        "imgs": "https://i.imgur.com/MEe09s2.png"
     },
     {
         "id": 2,
         "name": "Mr. Akshesh Yadav",
         "qualification": "M.B.B.S",
         "experience": "6 years",
-        "imgs": "../../assets/Images/Akshesh.png"
+        "imgs": "https://i.imgur.com/llheveM.png"
     },
     {
         "id": 3,
         "name": "Mr. Shubham Jaiswar",
         "qualification": "M.B.B.S",
         "experience": "7 years",
-        "imgs": "../../assets/Images/shubham.png"
+        "imgs": "https://i.imgur.com/D1yrQdl.png"
     },
     {
         "id": 4,
         "name": "Mr. Aakash Chaurasiya",
         "qualification": "BE Computer Science",
         "experience": "7 years",
-        "imgs": "../../assets/Images/aakash.png"
+        "imgs": "https://i.imgur.com/y3sOpI6.png"
     },
     {
         "id": 5,
         "name": "Mr. Ankit Vishwakarma",
         "qualification": "BE Computer Science",
         "experience": "6 years",
-        "imgs": "../../assets/Images/ankit.png"
+        "imgs": "https://i.imgur.com/xBBhg5E.png"
     },
     {
         "id": 6,
         "name": "Mr. Abhishek Chaubey",
         "qualification": "B.Sc. Bed (Mathematics)",
         "experience": "6 years",
-        "imgs": "../../assets/Images/abhishek.png"
+        "imgs": "https://i.imgur.com/LfFmewN.png"
     }
 ]
