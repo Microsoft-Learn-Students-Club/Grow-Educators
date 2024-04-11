@@ -1,8 +1,7 @@
-import React from 'react';
 export default function Feedback() {
     return (
-        <>
-            <div className="bg-gray-800 border-2 p-8 rounded-lg max-w-3xl mx-auto mt-10">
+        <section>
+            <div className="bg-gray-800 border-2 p-8 rounded-lg max-w-3xl mx-8 sm:mx-auto mt-10 mb-24">
                 <h1 className="italic text-3xl text-white font-bold text-center mb-8 ">Feedback</h1>
                 <form className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -45,9 +44,6 @@ export default function Feedback() {
                     <button type="submit" className="bg-gray-600 w-full shadow-lg shadow-gray-900 text-white font-semibold py-2 rounded-lg hover:bg-sky-700 transition duration-300">Submit Feedback</button>
                 </form>
             </div>
-            <br />
-            <br />
-            <br />
-        </>
+        </section>
     );
 }

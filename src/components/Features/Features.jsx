@@ -1,17 +1,20 @@
-import { useState } from 'react'
-
-
 function Features() {
 
     return (
         <section className=" text-black body-font">
+            <div className="flex-col flex sm:flex-row justify-center items-center mt-36">
+                <div className="mb-6 rounded-3xl sm:mr-40 w-[200px] h-[200px] bg-pink-100 sm:w-[240px] sm:h-[240px] md:w-[260px] md:h-[260px] lg:w-[300px] lg:h-[300px] overflow-hidden flex justify-center items-center">
+                    <img src="https://images.pexels.com/photos/3662803/pexels-photo-3662803.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Descriptive Alt Text" className="min-w-full min-h-full object-cover" />
+                </div>
+                <h1 className="text-xl font-bold text-black-800 text-center sm:text-xl md:text-2xl lg:text-4xl">WHAT SETS US APART?</h1>
+            </div>
             <div className="container px-5 py-24 mx-auto">
-                <h1 className="sm:text-4xl text-3xl text-center font-medium title-font mb-4">Learning App</h1>
+                <h1 className="sm:text-4xl text-3xl text-center title-font mb-4 font-semibold">Learning App</h1>
                 <div className="flex my-6 justify-center">
-                    <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+                    <div className="w-36 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                 </div>
 
-                <div className="text-center mb-20 flex flex-col lg:flex-row-reverse mdcs">
+                <div className="text-center flex flex-col lg:flex-row-reverse mdcs">
                     <div className="flex flex-col items-center lg:w-4/5 sm:mb-2 -mx-2">
                         <div className="p-2 w-5/6 md:w-2/3">
                             <div className="bg-gray-800 rounded flex p-4 h-full items-center">
