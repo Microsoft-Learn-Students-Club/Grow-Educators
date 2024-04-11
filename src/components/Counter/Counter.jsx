@@ -1,11 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
+import { FaBusinessTime, FaSmile, FaTrophy } from 'react-icons/fa';
+import { FaUsers } from 'react-icons/fa';
 
 const Counter = () => {
     const [counters, setCounters] = useState([
-        { target: 6, current: 0, text: 'Years of Excellence' },
-        { target: 1500, current: 0, text: 'Satisfied Students' },
-        { target: 11, current: 0, text: 'Experienced Faculties' },
-        { target: 500, current: 0, text: 'Satisfied Parents' }
+        { symbol: "+", icon: <FaTrophy size={42} color='yellow' />, target: 6, current: 0, text: 'Years of Excellence' },
+        { symbol: "+", icon: <FaUsers size={42} color='yellow' />, target: 15000, current: 0, text: 'Satisfied Students' },
+        { symbol: "+", icon: <FaBusinessTime size={42} color='yellow' />, target: 28, current: 0, text: 'Experienced Faculties' },
+        { symbol: "%", icon: <FaSmile size={42} color='yellow' />, target: 96, current: 0, text: 'Satisfied Parents' }
     ]);
 
     const countersRef = useRef(null);
@@ -61,13 +63,15 @@ const Counter = () => {
     return (
         <section
             ref={countersRef}
-            className="bg-blue-900 text-white py-10 sm:py-20 border-t-4 border-blue-300 mb-24 w-[70%] rounded-3xl mx-auto"
+            className="bg-blue-900 text-white py-10 sm:py-20 border-4 border-white mb-24 w-[70%] rounded-3xl mx-auto"
         >
             <div className="container flex flex-col gap-12 sm:flex-row text-center justify-center items-center">
                 {counters.map((counter, index) => (
-                    <div key={index}>
-                        <div className="counter text-3xl font-bold pb-4">
+                    <div key={index} className='flex flex-col items-center justify-center'>
+                        {counter.icon}
+                        <div className="counter text-3xl font-bold py-4">
                             {Math.round(counter.current)}
+                            {counter.symbol}
                         </div>
                         <h3 className="font-semibold text-xl">{counter.text}</h3>
                     </div>

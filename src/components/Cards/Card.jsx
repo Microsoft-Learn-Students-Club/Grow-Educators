@@ -1,28 +1,68 @@
 /* eslint-disable react/prop-types */
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import edu from '../../assets/courses/edu.jpg';
 
-const CourseSection = ({ title, imgAlt, imgSrc, courseDetails }) => {
+const CourseModal = ({ title, details, closeModal }) => {
     return (
-        <div className="bg-blue-300 rounded-3xl border border-gray-300 p-6 w-full mt-11 lg:w-[430px] md:w-[530px] sm:w-[480px] sm:mt-24 flex flex-col justify-between">
-            <h2 className="text-2xl font-bold text-center mb-4 lg:text-3xl md:text-3xl">{title}</h2>
-            <div className="flex justify-center flex-wrap">
-                <img src={imgSrc} alt={imgAlt} className="text-center w-[200px] sm:w-[285px] sm:h-[200px] rounded-2xl" />
+        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-50 z-20">
+            <div className="bg-blue-300 rounded-lg p-8 flex flex-col items-center justify-center mx-8 w-[50%]">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4">{title}</h2>
+                <div className="flex justify-center flex-wrap">
+                    <img src={edu} alt="edu" className="text-center w-[200px] sm:w-[285px] sm:h-[200px] rounded-2xl" />
+                </div>
+                <ul className="flex flex-wrap justify-center items-center gap-8">
+                    {details.map((detail, index) => (
+                        <li key={index} className="my-4 font-semibold">
+                            {detail}
+                        </li>
+                    ))}
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusamus reiciendis ad quibusdam assumenda suscipit maxime dolore temporibus voluptates nihil, laudantium similique aliquid sequi! Magnam officiis dolorem laboriosam asperiores quae eligendi at sit architecto aliquid error. Blanditiis, eos omnis ipsam assumenda nobis voluptatum. Fugiat vitae sequi eius repellendus beatae tempora!</p>
+                <button
+                    className="mt-4 bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600"
+                    onClick={closeModal}
+                >
+                    Close
+                </button>
             </div>
-            {courseDetails && (
-                <>
-                    <ul className="flex flex-wrap justify-center items-center gap-2 mt-6">
-                        {courseDetails.map((detail, index) => (
-                            <li key={index} className="font-semibold sm:text-xl pl-4">{detail}</li>
-                        ))}
-                    </ul>
-                    <p className="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia nam est quasi delectus, odit dolorem id velit, porro assumenda et hic, suscipit repellat quam aliquid.</p>
-                </>
-            )}
-            <Link to="/viewcourse">
-                <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3">View Courses</button>
-            </Link>
         </div>
+    );
+};
+
+const CourseSection = ({ title, imgAlt, imgSrc, courseDetails }) => {
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+    };
+
+    return (
+        <>
+            <div className="bg-blue-300 rounded-3xl border border-gray-300 p-6 w-full mt-11 lg:w-[430px] md:w-[530px] sm:w-[480px] sm:mt-24 flex flex-col justify-between cursor-pointer" onClick={openModal}>
+                <h2 className="text-2xl font-bold text-center mb-4 lg:text-3xl md:text-3xl">{title}</h2>
+                <div className="flex justify-center flex-wrap">
+                    <img src={imgSrc} alt={imgAlt} className="text-center w-[200px] sm:w-[285px] sm:h-[200px] rounded-2xl" />
+                </div>
+                {courseDetails && (
+                    <>
+                        <ul className="flex flex-wrap justify-center items-center gap-2 mt-6">
+                            {courseDetails.map((detail, index) => (
+                                <li key={index} className="font-semibold sm:text-xl pl-4">{detail}</li>
+                            ))}
+                        </ul>
+                        <p className="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia nam est quasi delectus, odit dolorem id velit, porro assumenda et hic, suscipit repellat quam aliquid.</p>
+                    </>
+                )}
+                <button className="w-full bg-yellow-200 text-center rounded-lg py-3 text-lg mt-3">View Courses</button>
+            </div>
+            {modalOpen && (
+                <CourseModal title={title} details={courseDetails} closeModal={closeModal} />
+            )}
+        </>
     );
 };
 
