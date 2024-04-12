@@ -12,7 +12,7 @@ const Hero = () => {
     return (
         <>
             <section className="h-full rounded-bl-[100q] md:h-[85vh] bg-fixed md:pb-0 pb-4 px-4 sm:px-24">
-                <div className="flex md:flex-row flex-col-reverse items-center md:gap-0 gap-8 pt-12 mt-0 sm:mt-24 sm:pt-26">
+                <div className="flex md:flex-row flex-col-reverse items-center md:gap-0 gap-8 pt-12 mt-0 sm:pt-24 sm:pt-26">
                     <div className="flex flex-col items-center md:items-start gap-2">
                         <div className="min-h-[96px] pl-4 md:pl-0">
                             <Suspense fallback={<div className="font-semibold text-xl">Loading...</div>}>
