@@ -6,15 +6,9 @@ function AboutUs() {
         <>
             <section className=' px-10 pt-5'>
                 <Header />
-                <h1 className="text-center font-semibold text-4xl my-5 pt-12">Our Experienced Teachers</h1>
-                <div className="flex my-6 justify-center">
-                    <div className="w-36 h-1 rounded-full bg-indigo-500 inline-flex"></div>
-                </div>
+                <h1 className="text-center font-semibold text-3xl sm:text-4xl my-5 pt-12 text-red-600">Our Experienced Teachers</h1>
                 <Ourteam />
-                <h1 className="text-center font-semibold text-4xl my-5 pt-12">Success Stories</h1>
-                <div className="flex my-6 justify-center">
-                    <div className="w-36 h-1 rounded-full bg-indigo-500 inline-flex"></div>
-                </div>
+                <h1 className="text-center font-semibold text-3xl sm:text-4xl my-5 pt-12 text-red-600">Success Stories</h1>
                 <SuccessStories />
             </section>
         </>
