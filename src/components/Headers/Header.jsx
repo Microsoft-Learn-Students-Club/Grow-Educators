@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="bg-gray-900 border-gray-200 backdrop-filter backdrop-blur-sm px-4 lg:px-6 py-2.5">
+            <nav className="bg-blue-950 border-gray-200 backdrop-filter backdrop-blur-sm px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center">
@@ -20,7 +20,7 @@ const Header = () => {
                                 className="mr-3 h-8 sm:h-12"
                                 alt="Logo"
                             />
-                            <span className="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap text-white">{`Groww Educators`}</span>
+                            <span className="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap text-white">{`Grow Educators`}</span>
                         </Link>
                     </div>
                     <div className="lg:hidden">
@@ -36,16 +36,16 @@ const Header = () => {
                                 <NavLink
                                     to="/"
                                     activeclassname="text-orange-700"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-700 lg:p-0"
                                 >
                                     Home
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
-                                    to="/cards"
+                                    to="/courses"
                                     activeclassname="text-orange-700"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-700 lg:p-0"
                                 >
                                     Courses
                                 </NavLink>
@@ -54,7 +54,7 @@ const Header = () => {
                                 <NavLink
                                     to="/aboutus"
                                     activeclassname="text-orange-700"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-700 lg:p-0"
                                 >
                                     About
                                 </NavLink>
@@ -63,7 +63,7 @@ const Header = () => {
                                 <NavLink
                                     to="/feedback"
                                     activeclassname="text-orange-700"
-                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+                                    className="block py-2 pr-4 pl-3 duration-200 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-700 lg:p-0"
                                 >
                                     Feedback
                                 </NavLink>

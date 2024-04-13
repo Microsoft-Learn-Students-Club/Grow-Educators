@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -54,8 +53,8 @@ export default function Feedback() {
 
     return (
         <>
-            <div className="bg-gray-800 border-2 p-8 rounded-lg max-w-3xl mx-auto mt-10">
-                <h1 className="italic text-3xl text-white font-bold text-center mb-8 ">Feedback</h1>
+            <div className="bg-blue-950 border-2 p-8 rounded-lg max-w-3xl mx-auto mt-10 mb-36">
+                <h1 className="text-3xl sm:text-4xl text-yellow-400 font-bold text-center mb-8">Feedback</h1>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
@@ -96,15 +95,9 @@ export default function Feedback() {
                         <textarea id="feedbackFormMessage" rows={3} className="w-full rounded-lg border border-0.2 focus:border-blue-500 px-4 py-2 shadow-md shadow-gray-900" placeholder="Your message"></textarea>
                     </div>
 
-
-
-                    <button type="submit" value={message} onChange={e => setMessage(e.target.value)} rows={3} className="bg-gray-600 w-full shadow-lg shadow-gray-900 text-white font-semibold py-2 rounded-lg hover:bg-sky-700 transition duration-300">Submit Feedback</button>
-
+                    <button type="submit" value={message} onChange={e => setMessage(e.target.value)} rows={3} className="bg-yellow-400 w-full font-semibold py-2 rounded-lg hover:bg-yellow-200 transition duration-300">Submit Feedback</button>
                 </form>
             </div>
-            <br />
-            <br />
-            <br />
         </>
     );
 }
