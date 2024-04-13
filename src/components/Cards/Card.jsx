@@ -80,15 +80,15 @@ function Card() {
                     imgSrc={edu}
                     imgAlt="Grade 5th to 10th"
                     courseDetails={["GRADE 5th to 10th"]}
-                    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                    content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
                 />
                 <CourseSection
                     title="SCIENCE"
                     imgSrc={edu}
                     imgAlt="SCIENCE"
                     courseDetails={["11th", "12th", "JEE(MAINS)", "NEET", "MHT-CET(MED & ENGG.)"]}
-                    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
-                />  
+                    content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                />
             </div>
 
             <div className="px-4 mb-36 sm:flex flex-wrap justify-center gap-14">
@@ -97,14 +97,14 @@ function Card() {
                     imgSrc={edu}
                     imgAlt="COMMERCE"
                     courseDetails={["F.Y.J.C", "S.Y.J.C", "B.COM", "BAF", "CA FOUNDATION"]}
-                    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                    content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
                 />
                 <CourseSection
                     title="TECH"
                     imgSrc={edu}
                     imgAlt="TECH"
                     courseDetails={["C & C++", "JAVA", "PYTHON", "HTML & CSS"]}
-                    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                    content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
                 />
             </div>
 
@@ -115,7 +115,7 @@ function Card() {
                     <div className="grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  md:grid-cols-2 lg:gap-16">
                         <div className="grid justify-center">
                             <div className="rounded-full w-[170px] h-[170px] overflow-hidden bg-custom mt-4 m-auto flex justify-center items-center">
-                                <img src="/src/assets/courses/feature3.jpg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
+                                <img src="https://i.imgur.com/NIickO3.jpeg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
                             </div>
                             <h2 className="text-[16px] mt-4 font-bold lg:text-xl">
                                 <i className="fas fa-check-circle mr-2 text-green-500" />Daily live Interactive classes
@@ -124,7 +124,7 @@ function Card() {
 
                         <div className="grid justify-center">
                             <div className="rounded-full w-[170px] h-[170px] overflow-hidden bg-custom mt-4  m-auto  flex justify-center items-center">
-                                <img src="/src/assets/courses/feature1.jpg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
+                                <img src="https://i.imgur.com/QSwVmig.jpeg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
                             </div>
                             <h2 className="text-[16px] mt-4 font-bold lg:text-xl">
                                 <i className="fas fa-check-circle mr-2 text-green-500" />Personalized study tools
@@ -133,7 +133,7 @@ function Card() {
 
                         <div className="grid justify-center">
                             <div className="rounded-full w-[170px] h-[170px] overflow-hidden bg-custom mt-4 m-auto flex justify-center items-center">
-                                <img src="/src/assets/courses/feature4.jpg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
+                                <img src="https://i.imgur.com/2h7IoOC.jpeg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
                             </div>
                             <h2 className="text-[16px] mt-4 font-bold lg:text-xl">
                                 <i className="fas fa-check-circle mr-2 text-green-500" />Weekly self study plan
@@ -142,7 +142,7 @@ function Card() {
 
                         <div className="grid justify-center">
                             <div className="rounded-full w-[170px] h-[170px] overflow-hidden bg-custom mt-4  m-auto flex justify-center items-center">
-                                <img src="/src/assets/courses/feature2.jpg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
+                                <img src="https://i.imgur.com/NlyJ8Nw.jpeg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
                             </div>
                             <h2 className="text-[16px] mt-4 font-bold lg:text-xl">
                                 <i className="fas fa-check-circle mr-2 text-green-500" />Score Improvement strategy
@@ -151,7 +151,7 @@ function Card() {
 
                         <div className="grid justify-center">
                             <div className="rounded-full w-[170px] h-[170px] overflow-hidden bg-custom mt-4  m-auto flex justify-center items-center">
-                                <img src="/src/assets/courses/feature4.jpg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
+                                <img src="https://i.imgur.com/2h7IoOC.jpeg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
                             </div>
                             <h2 className="text-[16px] mt-4 font-bold lg:text-xl">
                                 <i className="fas fa-check-circle mr-2 text-green-500" />Timely syllabus completion
@@ -160,7 +160,7 @@ function Card() {
 
                         <div className="grid justify-center">
                             <div className="rounded-full w-[170px] h-[170px] overflow-hidden bg-custom mt-4  m-auto flex justify-center items-center">
-                                <img src="/src/assets/courses/feature1.jpg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
+                                <img src="https://i.imgur.com/QSwVmig.jpeg" alt="Personalized Study Tools" className="min-w-full min-h-full object-cover" />
                             </div>
                             <h2 className="text-[16px] my-4 font-bold lg:text-xl">
                                 <i className="fas fa-check-circle mr-2 text-green-500" />Tech Base Teaching

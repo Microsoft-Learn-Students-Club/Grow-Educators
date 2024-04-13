@@ -4,14 +4,14 @@ function Features() {
         <section>
             <div className="flex-col flex sm:flex-row justify-center items-center mt-36">
                 <div className="flex justify-center items-center mb-6 rounded-3xl sm:mr-32 w-[200px] h-[200px] marker:sm:w-[240px] sm:h-[240px] md:w-[260px] md:h-[260px] lg:w-[650px] lg:h-[400px] overflow-hidden">
-                    <img src="/src/assets/courses/feature2.jpg" alt="what sets apart" className="min-w-full min-h-full object-cover" />
+                    <img src="https://i.imgur.com/NlyJ8Nw.jpeg" alt="what sets apart" className="min-w-full min-h-full object-cover" />
                 </div>
                 <h1 className="font-bold text-center text-xl md:text-2xl lg:text-5xl text-red-600">What sets us apart?</h1>
             </div>
 
             <div className="container px-5 py-24 mx-auto">
                 <h1 className="text-3xl sm:text-5xl text-center title-font mb-8 font-semibold text-red-600">Learning App</h1>
-                
+
                 <div className="text-center flex flex-col lg:flex-row-reverse mdcs">
                     <div className="flex flex-col items-center lg:w-4/5 sm:mb-2 -mx-2">
                         <div className="p-2 w-5/6 md:w-2/3">

@@ -57,7 +57,7 @@ const Hero = () => {
 
                     <img
                         // src="https://images.pexels.com/photos/3231359/pexels-photo-3231359.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        src="/src/assets/courses/feature2.jpg"
+                        src="https://i.imgur.com/NlyJ8Nw.jpeg"
                         // width={850}
                         // height={850}
                         width={550}
