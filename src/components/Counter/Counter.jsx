@@ -36,7 +36,7 @@ const Counter = () => {
     }, []);
 
     const startCounting = () => {
-        const speed = 1000;
+        const speed = 500;
         let animationFrame;
 
         const updateCount = () => {
