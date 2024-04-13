@@ -1,6 +1,6 @@
-# Groww-Educators
+# Grow-Educators
 
-Groww Educators is a comprehensive educational platform designed to empower both students and educators alike. With a wide range of courses spanning various subjects, Groww Educators provides interactive learning experiences tailored to individual needs. This platform fosters collaboration, creativity, and critical thinking, enabling students to thrive academically and educators to excel in their teaching endeavors.
+Grow Educators is a comprehensive educational platform designed to empower both students and educators alike. With a wide range of courses spanning various subjects, Grow Educators provides interactive learning experiences tailored to individual needs. This platform fosters collaboration, creativity, and critical thinking, enabling students to thrive academically and educators to excel in their teaching endeavors.
 
 # 📦 Technologies Used
 
@@ -8,9 +8,9 @@ Groww Educators is a comprehensive educational platform designed to empower both
 - `React.js`
 - `Tailwind CSS`
 
-## Running the Groww Educators Locally
+## Running the Grow Educators Locally
 
-To run the Groww Educators locally, follow the guidelines below. Ensure that you have Node.js and npm installed on your machine.
+To run the Grow Educators locally, follow the guidelines below. Ensure that you have Node.js and npm installed on your machine.
 
 ### Prerequisites
 - **Node.js:** Make sure Node.js is installed. You can download it from [here](https://nodejs.org/).
@@ -18,12 +18,12 @@ To run the Groww Educators locally, follow the guidelines below. Ensure that you
 ## Steps
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/Microsoft-Learn-Students-Club/Groww-Educators.git
+    git clone https://github.com/Microsoft-Learn-Students-Club/Grow-Educators.git
     ```
 
 2. **Navigate to the project directory:**
     ```bash
-    cd Groww-Educators
+    cd Grow-Educators
     ```
 
 3. **Install Dependencies:**
@@ -38,10 +38,10 @@ To run the Groww Educators locally, follow the guidelines below. Ensure that you
    This command will start the development server and open the app in your default web browser.
 
 5. **Access the App:**
-   Open your web browser and go to [http://localhost:5173](http://localhost:5173). You should see the Groww Educators Website in React + Vite.js app running locally.
+   Open your web browser and go to [http://localhost:5173](http://localhost:5173). You should see the Grow Educators Website in React + Vite.js app running locally.
 
 6. **Explore the App:**
-   You can now explore the different sections of the Groww Educators Website, such as Home, Works, Team, Leaderboard and Contact Us.
+   You can now explore the different sections of the Grow Educators Website, such as Home, Works, Team, Leaderboard and Contact Us.
 
 7. **Stop the Development Server:**
    To stop the development server, press `Ctrl + C` in the terminal where the server is running.
@@ -53,14 +53,14 @@ To run the Groww Educators locally, follow the guidelines below. Ensure that you
 
 ## Contribution Guidelines
 
-We welcome contributions to enhance the Groww Educators website. Your input is valuable, and following these guidelines ensures a smooth collaboration.
+We welcome contributions to enhance the Grow Educators website. Your input is valuable, and following these guidelines ensures a smooth collaboration.
 
 ### Getting Started
 
 1. **Fork & Clone:** Begin by forking the repository and cloning it to your local machine.
     ```bash
-    git clone https://github.com/Microsoft-Learn-Students-Club/Groww-Educators.git
-    cd Groww-Educators
+    git clone https://github.com/Microsoft-Learn-Students-Club/Grow-Educators.git
+    cd Grow-Educators
     ```
 
 2. **Environment Setup:** Set up your development environment and install necessary dependencies.
@@ -106,7 +106,7 @@ Thank you for contributing! 🌟
 
 ## Maintainers
 
-The MLSC VCET Website is actively maintained and developed by the following contributors:
+The Grow Educators Website is actively maintained and developed by the following contributors:
 
 - Mukesh Billa -> GitHub: [bmukesh23](https://github.com/bmukesh23)
 - Adarsh Gupta -> GitHub: [Adarsh7825](https://github.com/Adarsh7825)
