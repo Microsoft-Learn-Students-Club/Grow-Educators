@@ -7,13 +7,13 @@ const Footerss = () => {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-6 lg:gap-32">
 
         <div className="flex flex-col justify-center items-center gap-4">
-          <img src="/src/assets/Logos/groww-educator-logo.png" className="lg:h-[8rem]"/>
+          <img src="https://i.imgur.com/JQXUMYM.png" className="lg:h-[8rem]" />
           <p className="text-xl sm:text-2xl font-semibold">Grow Educators</p>
         </div>
 
         <div className="flex flex-col items-start gap-1">
           <div className="flex justify-center items-center gap-1">
-            <BsPhone/>
+            <BsPhone />
             <p className="text-sm sm:text-xl"> For Enquires:</p>
           </div>
 
