@@ -10,9 +10,9 @@ const CourseModal = ({ title, details, closeModal }) => {
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-blue-950 bg-opacity-50 z-20 overflow-auto mt-[2.1rem]">
             <div className="bg-blue-200 rounded-lg p-2 sm:p-8 flex flex-col items-center justify-center mx-8 w-full sm:w-[50%]">
                 <h2 className="text-xl sm:text-2xl font-bold mb-4 text-blue-950">{title}</h2>
-                <div className="flex justify-center flex-wrap">
+                {/* <div className="flex justify-center flex-wrap">
                     <img src={edu} alt="edu" className="text-center w-[200px] sm:w-[400px] sm:h-[300px] rounded-2xl object-cover" />
-                </div>
+                </div> */}
                 <ul className="flex flex-wrap justify-center items-center gap-8">
                     {details.map((detail, index) => (
                         <li key={index} className="my-4 font-semibold bg-blue-900 p-2 rounded text-white">
@@ -84,7 +84,7 @@ function Card() {
                         imgSrc={edu}
                         imgAlt="Grade 5th to 10th"
                         courseDetails={["GRADE 5th to 10th"]}
-                        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                        content="Our programs for Grades 5-10 ensure success in school exams, Olympiads and other competitive tests. Focused on key NCERT subjects, we nurture fundamentals, problem-solving and scientific thinking, equipping students for a competitive edge and a promising future."
                     />
 
                 </div>
@@ -95,7 +95,7 @@ function Card() {
                         imgSrc={edu3}
                         imgAlt="SCIENCE"
                         courseDetails={["11th", "12th", "JEE(MAINS)", "NEET", "MHT-CET(MED & ENGG.)"]}
-                        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                        content="Our program focuses on grades 11-12 also ensures preparation for competitive exams such as NEET, JEE, and MHT CET."
                     />
                 </div>
 
@@ -105,7 +105,7 @@ function Card() {
                         imgSrc={edu4}
                         imgAlt="COMMERCE"
                         courseDetails={["F.Y.J.C", "S.Y.J.C", "B.COM", "BAF", "CA FOUNDATION"]}
-                        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                        content="Our program encompasses studies in accounting, economics, & business during F.Y.J.C & S.Y.J.C, followed by specialized tracks such as B.Com or BAF for deeper knowledge. Aspiring chartered accountants prepare for the CA Foundation exam as a gateway to the CA qualification."
                     />
 
                 </div>
@@ -116,7 +116,7 @@ function Card() {
                         imgSrc={edu2}
                         imgAlt="TECH"
                         courseDetails={["C & C++", "JAVA", "PYTHON", "HTML & CSS"]}
-                        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel assumenda nihil sed iusto nam deserunt sapiente laborum quasi minus."
+                        content="Our program focuses on Programming languages like C and C++, Java, Python, and HTML and CSS each have unique strengths: C & C++ for efficiency, Java for platform independence, Python for versatility, and HTML & CSS for web development."
                     />
                 </div>
             </div>
