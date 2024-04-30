@@ -45,10 +45,10 @@ const SuccessStories2 = () => {
                     className="w-full md:w-80 h-80 mb-6 flex items-center p-10 bg-blue-950 text-white rounded-md shadow-md mx-1 drop-shadow-xl transition duration-300 transform hover:scale-105"
                 >
                     <div className='flex items-center justify-center gap-2 ml-14'>
-                        <img className='w-16 h-16 rounded-full border object-cover' src={data.img} alt={data.name} />
+                        <img className='w-12 sm:w-16 h-12 sm:h-16 rounded-full border object-cover' src={data.img} alt={data.name} />
                         <h3 className='w-44 md:w-72 text-xl line-clamp-2'>{data.name}</h3>
                     </div>
-                    <p className="line-clamp-8 mt-4 md:w-full text-sm sm:text-md text-justify px-8">{data.bio}</p>
+                    <p className="line-clamp-8 mt-4 md:w-full text-sm sm:text-md text-justify sm:px-8">{data.bio}</p>
                 </div>
             ))}
         </Slider>
