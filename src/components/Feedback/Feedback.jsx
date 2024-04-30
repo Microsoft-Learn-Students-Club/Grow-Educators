@@ -6,6 +6,7 @@ export default function Feedback() {
     const [lastName, setLastName] = useState("");
     const [mobileNumber, setMobileNumber] = useState("");
     const [classValue, setClassValue] = useState("");
+    // eslint-disable-next-line no-unused-vars
     const [goal, setGoal] = useState("");
     const [message, setMessage] = useState("");
 
@@ -53,13 +54,13 @@ export default function Feedback() {
 
     return (
         <>
-            <div className="flex justify-center items-center pl-20">
+            <div className="flex justify-center items-center lg:pl-20">
                 <img
                     src="https://img-cdn.pixlr.com/image-generator/history/6619772f6837fffe56e06b9d/6e6d3909-ebee-4c02-becf-c834bf187b4e/medium.webp"
                     alt="Feedback image"
-                    className="hidden sm:block w-1/2 h-1/5 object-cover rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+                    className="hidden sm:block w-[40%] h-[10%] object-cover rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
                 />
-                <div className="bg-blue-950 border-2 p-8 sm:p-12 rounded-lg max-w-sm sm:max-w-3xl mx-auto mt-10 mb-36 ">
+                <div className="bg-blue-950 border-2 p-12 rounded-lg max-w-sm sm:max-w-3xl mx-auto mt-10 mb-10">
                     <h1 className="text-3xl sm:text-4xl text-yellow-400 font-bold text-center mb-8">Feedback</h1>
                     <form onSubmit={handleSubmit} className="space-y-3">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

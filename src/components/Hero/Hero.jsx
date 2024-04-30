@@ -14,9 +14,9 @@ const Hero = () => {
             <section className="h-full md:h-screen md:pb-0 pb-4 px-4 sm:px-24">
                 <div className="flex md:flex-row flex-col-reverse items-center md:gap-0 gap-8 pt-12 mt-0 sm:pt-24 sm:pt-26">
                     <div className="flex flex-col items-center md:items-start">
-                        <h1 className="font-bold text-3xl leading-3 text-blue-950">Learning with Grow Educators made</h1>
+                        <h1 className="font-bold text-xl text-center w-[70%] sm:w-full sm:text-left sm:text-3xl sm:leading-3 text-blue-950">Learning with Grow Educators made</h1>
                         <div className="min-h-[96px] relative pl-4 md:pl-0">
-                            <div className="absolute top-0 left-0 right-0 bottom-0">
+                            <div className="absolute top-6 -left-20 sm:left-0 right-0 bottom-0">
                                 <Typewriter
                                     options={{
                                         autoStart: true,
@@ -27,22 +27,22 @@ const Hero = () => {
                                     onInit={(typewriter) => {
                                         typewriter
                                             .typeString(
-                                                '<span style="color:rgb(225, 19, 68); font-size:4em; font-weight:700;">Intuitive.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Intuitive.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()
                                             .typeString(
-                                                '<span style="color:rgb(225, 19, 68); font-size:4em; font-weight:700;">Educate.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Educate.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()
                                             .typeString(
-                                                '<span style="color:rgb(225, 19, 68); font-size:4em; font-weight:700;">Explore.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Explore.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()
                                             .typeString(
-                                                '<span style="color:rgb(225, 19, 68); font-size:4em; font-weight:700;">Enjoy.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Enjoy.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()

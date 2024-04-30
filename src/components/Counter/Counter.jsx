@@ -65,15 +65,15 @@ const Counter = () => {
             ref={countersRef}
             className="bg-blue-950 text-white py-10 sm:py-20 mb-32 w-[90%] rounded-3xl mx-auto"
         >
-            <div className="container flex flex-col gap-16 sm:flex-row text-center justify-center items-center">
+            <div className="flex flex-col gap-10 sm:gap-16 sm:flex-row text-center justify-center items-center">
                 {counters.map((counter, index) => (
                     <div key={index} className='flex flex-col items-center justify-center'>
                         {counter.icon}
-                        <div className="counter text-4xl font-bold py-4">
+                        <div className="counter text-2xl sm:text-4xl font-bold py-4">
                             {Math.round(counter.current)}
                             {counter.symbol}
                         </div>
-                        <h3 className="font-semibold text-2xl">{counter.text}</h3>
+                        <h3 className="font-semibold text-xl sm:text-2xl">{counter.text}</h3>
                     </div>
                 ))}
             </div>

@@ -18,11 +18,11 @@ const Header2 = () => {
 
     return (
         <section>
-            <h1 className="font-semibold text-center text-2xl my-4 sm:text-5xl sm:w-full text-blue-950">
+            <h1 className="font-semibold text-center text-xl my-4 sm:text-5xl sm:w-full text-blue-950">
                 Know About
                 <span className="text-red-600 ml-2">{`"Grow Educators"`}</span>
             </h1>
-            <div className="bg-blue-950 rounded-3xl border border-gray-300 py-2 px-4">
+            <div className="bg-blue-950 rounded-3xl border border-gray-300 py-2 px-0 sm:px-4">
                 <div className="flex flex-col-reverse lg:flex-row lg:gap-20 items-center mx-5 justify-center py-6">
                     <div className="lg:w-3/4 text-center">
                         <h2 className="text-xl mt-4 mb-10 font-semibold sm:text-4xl sm:w-[60%] m-auto text-white">
