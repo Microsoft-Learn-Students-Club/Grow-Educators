@@ -1,50 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
 import edu from '../../assets/courses/1st-10th.webp';
 import edu2 from '../../assets/courses/jee.webp';
 import edu3 from '../../assets/courses/neet.webp'
 import edu4 from '../../assets/courses/commerce.webp';
 
-const CourseModal = ({ title, details, closeModal }) => {
-    return (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-blue-950 bg-opacity-50 z-20 overflow-auto mt-[2.1rem]">
-            <div className="bg-blue-200 rounded-lg p-2 sm:p-8 flex flex-col items-center justify-center mx-8 w-full sm:w-[50%]">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4 text-blue-950">{title}</h2>
-                {/* <div className="flex justify-center flex-wrap">
-                    <img src={edu} alt="edu" className="text-center w-[200px] sm:w-[400px] sm:h-[300px] rounded-2xl object-cover" />
-                </div> */}
-                <ul className="flex flex-wrap justify-center items-center gap-8">
-                    {details.map((detail, index) => (
-                        <li key={index} className="my-4 font-semibold bg-blue-900 p-2 rounded text-white">
-                            {detail}
-                        </li>
-                    ))}
-                </ul>
-                <p className='text-sm sm:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusamus reiciendis ad quibusdam assumenda suscipit maxime dolore temporibus voluptates nihil, laudantium similique aliquid sequi! Magnam officiis dolorem laboriosam asperiores quae eligendi at sit architecto aliquid error. Blanditiis, eos omnis ipsam assumenda nobis voluptatum. Fugiat vitae sequi eius repellendus beatae tempora!</p>
-                <button
-                    className="mt-4 bg-red-700 text-white px-4 py-2 rounded hover:bg-red-500"
-                    onClick={closeModal}
-                >
-                    Close
-                </button>
-            </div>
-        </div>
-    );
-};
 
-const CourseSection = ({ title, imgAlt, imgSrc, courseDetails, content }) => {
-    const [modalOpen, setModalOpen] = useState(false);
+const CourseSection = ({ title, imgAlt, imgSrc, courseDetails, content, redirectTo }) => {
 
-    const openModal = () => {
-        setModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setModalOpen(false);
+    const redirectToCourses = () => {
+        window.location.href = redirectTo;
     };
 
     return (
-        <>
+        <section>
             <div className='flex flex-col sm:flex-col justify-center items-center'>
                 <h2 className="font-bold text-center text-2xl lg:text-3xl md:text-3xl">{title}</h2>
                 <div className="bg-blue-950 text-white rounded-3xl p-6 w-full lg:w-[430px] md:w-[530px] sm:w-[480px] sm:mt-2 flex flex-col justify-between gap-4">
@@ -62,14 +30,10 @@ const CourseSection = ({ title, imgAlt, imgSrc, courseDetails, content }) => {
                             <p className="text-sm mt-3 text-justify">{content}</p>
                         </>
                     )}
-                    <button className="w-full bg-yellow-300 text-center rounded-lg py-3 text-lg mt-3 cursor-pointer text-black hover:bg-yellow-200" onClick={openModal}>View Courses</button>
+                    <button className="w-full bg-yellow-300 text-center rounded-lg py-3 text-lg mt-3 cursor-pointer text-black hover:bg-yellow-200" onClick={redirectToCourses}>View Courses</button>
                 </div>
             </div>
-
-            {modalOpen && (
-                <CourseModal title={title} details={courseDetails} closeModal={closeModal} />
-            )}
-        </>
+        </section>
     );
 };
 
@@ -84,7 +48,8 @@ function Card() {
                         imgSrc={edu}
                         imgAlt="Grade 5th to 10th"
                         courseDetails={["GRADE 5th to 10th"]}
-                        content="Our programs for Grades 5-10 ensure success in school exams, Olympiads and other competitive tests. Focused on key NCERT subjects, we nurture fundamentals, problem-solving and scientific thinking, equipping students for a competitive edge and a promising future."
+                        content="Our program encompasses studies on Grades 5th to 10th which ensure success in school exams, and other competitive tests. We nurture fundamentals and scientific thinking, equipping students for a competitive edge and a promising future."
+                        redirectTo="/school"
                     />
 
                 </div>
@@ -95,7 +60,8 @@ function Card() {
                         imgSrc={edu3}
                         imgAlt="SCIENCE"
                         courseDetails={["11th", "12th", "JEE(MAINS)", "NEET", "MHT-CET(MED & ENGG.)"]}
-                        content="Our program focuses on grades 11-12 also ensures preparation for competitive exams such as NEET, JEE, and MHT CET."
+                        content="Our program encompasses studies on Grades 11th and 12th also ensures preparation for competitive exams such as NEET, JEE, and MHT-CET(MED. & ENGG.)"
+                        redirectTo="/science"
                     />
                 </div>
 
@@ -106,6 +72,7 @@ function Card() {
                         imgAlt="COMMERCE"
                         courseDetails={["F.Y.J.C", "S.Y.J.C", "B.COM", "BAF", "CA FOUNDATION"]}
                         content="Our program encompasses studies in accounting, economics, & business during F.Y.J.C & S.Y.J.C, followed by specialized tracks such as B.Com or BAF for deeper knowledge. Aspiring chartered accountants prepare for the CA Foundation exam as a gateway to the CA qualification."
+                        redirectTo="/commerce"
                     />
 
                 </div>
@@ -117,6 +84,7 @@ function Card() {
                         imgAlt="TECH"
                         courseDetails={["C & C++", "JAVA", "PYTHON", "HTML & CSS"]}
                         content="Our program focuses on Programming languages like C and C++, Java, Python, and HTML and CSS each have unique strengths: C & C++ for efficiency, Java for platform independence, Python for versatility, and HTML & CSS for web development."
+                        redirectTo="/tech"
                     />
                 </div>
             </div>
