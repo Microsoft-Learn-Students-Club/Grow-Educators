@@ -1,3 +1,5 @@
+import learningImg from "../../assets/courses/learning_app.png";
+ 
 function Features() {
 
     return (
@@ -12,8 +14,8 @@ function Features() {
             <div className="container lg:px-5 py-24 mx-auto">
                 <h1 className="text-3xl sm:text-5xl text-center title-font mb-8 font-semibold text-red-600">Learning App</h1>
 
-                <div className="text-center flex flex-col lg:flex-row-reverse mdcs">
-                    <div className="flex flex-col items-center lg:w-4/5 sm:mb-2">
+                <div className="text-center flex flex-col-reverse lg:flex-row-reverse gap-16 sm:gap-0">
+                    <div className="flex flex-col items-center lg:w-4/5 lg:mt-16 sm:mb-2">
                         <div className="p-2 w-5/6 md:w-2/3">
                             <div className="bg-blue-950 rounded flex p-4 h-full items-center">
                                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"
@@ -67,8 +69,8 @@ function Features() {
                     </div>
 
                     <div className="flex flex-col justify-evenly lg:w-2/3 mx-2 h-96">
-                        <div className="rounded-md px-2 w-full sm:w-[80%] h-3/6 my-2 m-auto" style={{ background: 'url("https://clipart-library.com/images/pT5rK4dgc.jpg") center center / cover' }}></div>
-                        <div className="rounded-md px-2 w-full sm:w-[80%] h-3/6 my-2 m-auto" style={{ background: 'url("https://clipart-library.com/images/pT5rK4dgc.jpg") center center / cover' }}></div>
+                        {/* <div className="rounded-md px-2 w-full sm:w-[80%] h-3/6 my-2 m-auto" style={{ background: 'url({learningImg}) center center / cover' }}></div> */}
+                        <img src={learningImg} className="h-screen w-[70%] rounded-3xl sm:w-[40%] m-auto border-4 border-black"/>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import feedbackImg from '../../assets/courses/feedback.jpg'
 
 export default function Feedback() {
     const [firstName, setFirstName] = useState("");
@@ -56,7 +57,7 @@ export default function Feedback() {
         <>
             <div className="flex justify-center items-center lg:pl-20">
                 <img
-                    src="https://img-cdn.pixlr.com/image-generator/history/6619772f6837fffe56e06b9d/6e6d3909-ebee-4c02-becf-c834bf187b4e/medium.webp"
+                    src={feedbackImg}
                     alt="Feedback image"
                     className="hidden sm:block w-[40%] h-[10%] object-cover rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
                 />
