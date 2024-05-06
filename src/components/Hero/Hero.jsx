@@ -75,9 +75,7 @@ const Hero = () => {
                                     <img
                                         src={hero.img}
                                         alt={hero.id}
-                                        width={500} 
-                                        height={450}
-                                        style={{borderRadius:"15px"}}
+                                        className="h-80 w-90 object-cover rounded-lg"
                                     />
                                 </div>
                             ))}
