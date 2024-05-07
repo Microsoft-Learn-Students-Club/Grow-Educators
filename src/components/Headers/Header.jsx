@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/Logos/groww-educator-logo.png';
+import logo from '../../assets/Logos/updated_Logo.png';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,16 +11,17 @@ const Header = () => {
 
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="bg-blue-950 border-gray-200 backdrop-filter backdrop-blur-sm px-4 lg:px-6 py-2.5">
-                <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <nav className="bg-blue-950 border-gray-200 backdrop-filter backdrop-blur-sm px-4 lg:px-10 py-2.5">
+                <div className="flex flex-wrap justify-between items-center mx-auto">
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center">
                             <img
                                 src={logo}
                                 className="mr-3 h-8 sm:h-12"
                                 alt="Logo"
+                                style={{borderRadius: "25px"}}
                             />
-                            <span className="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap text-white">{`Grow Educators`}</span>
+                            {/* <span className="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap text-white">{`Grow Educators`}</span> */}
                         </Link>
                     </div>
                     <div className="lg:hidden">

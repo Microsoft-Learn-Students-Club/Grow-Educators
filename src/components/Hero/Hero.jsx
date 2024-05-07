@@ -45,17 +45,17 @@ const Hero = () => {
                                             .pauseFor(500)
                                             .deleteAll()
                                             .typeString(
-                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Educate.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Educative.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()
                                             .typeString(
-                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Explore.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Exploring.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()
                                             .typeString(
-                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Enjoy.</span>'
+                                                '<span class="text-5xl md:text-6xl" style="color:rgb(225, 19, 68); font-weight:700;">Enjoyable.</span>'
                                             )
                                             .pauseFor(500)
                                             .deleteAll()
