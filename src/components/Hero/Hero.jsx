@@ -25,8 +25,8 @@ const Hero = () => {
     return (
         <>
             <section className="h-full md:h-screen md:pb-0 pb-4 px-4 sm:px-24">
-                <div className="flex md:flex-row flex-col-reverse items-center md:gap-0 gap-8 pt-12 mt-0 sm:pt-24 sm:pt-26">
-                    <div className="flex flex-col items-center md:items-start">
+                <div className="flex md:flex-row flex-col-reverse items-center md:gap-0 gap-8 pt-12 mt-0 sm:pt-14">
+                    <div className="flex flex-col items-center md:items-start lg:pt-20 pt-32">
                         <h1 className="font-bold text-xl text-center w-[70%] sm:w-full sm:text-left sm:text-3xl sm:leading-3 text-blue-950">Learning with Grow Educators made</h1>
                         <div className="min-h-[96px] relative pl-4 md:pl-0">
                             <div className="absolute top-6 -left-20 sm:left-0 right-0 bottom-0">
@@ -68,14 +68,14 @@ const Hero = () => {
                             Take your career to the next level with industry-ready programs, An entire learning ecosystem at your fingertips to make learning fun. Choose from a range of tech programs and make your next big career switch.
                         </p>
                     </div>
-                    <div className="h-[280px] w-[90%] lg:h-[450px] lg:w-2/5">
+                    <div className="h-[280px] w-[90%] lg:h-[450px] lg:w-2/5 lg:pl-20">
                         <Slider {...settings}>
                             {HeroImg.map((hero) => (
                                 <div key={hero.id}>
                                     <img
                                         src={hero.img}
                                         alt={hero.id}
-                                        className="h-80 w-90 object-cover rounded-lg"
+                                        className="h-[26rem] w-[20rem] lg:h-[36rem] lg:w-[25rem] object-cover rounded-lg"
                                     />
                                 </div>
                             ))}
