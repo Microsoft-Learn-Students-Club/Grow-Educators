@@ -9,16 +9,16 @@ const Commerce = () => {
   return (
     <section className="w-full h-screen">
       <div className="flex flex-col sm:flex-row-reverse items-center justify-center px-6 py-12 lg:px-48 lg:pt-28 lg:pb-20">
-        <div className="flex justify-center lg:w-1/2">
-          <img src={edu} alt="science" className="h-[280px] sm:w-[300px] sm:h-[260px]" />
+        <div className="flex justify-center lg:ml-12 bg-blue-300 rounded-2xl">
+          <img src={edu} alt="science" className="h-[280px] sm:w-[300px] sm:h-[230px] p-4" />
         </div>
         <div className="flex flex-col lg:w-1/2">
-          <h2 className="text-blue-950 text-3xl lg:text-4xl font-semibold leading-relaxed">Commerce</h2>
+          <h2 className="text-blue-950 text-3xl lg:text-4xl font-semibold leading-relaxed text-center sm:text-left">Commerce</h2>
           <p className=" text-justify lg:text-lg">Our program encompasses studies in accounting, economics, & business during F.Y.J.C & S.Y.J.C, followed by specialized tracks such as B.Com or BAF for deeper knowledge. Aspiring chartered accountants prepare for the CA Foundation exam as a gateway to the CA qualification.</p>
         </div>
       </div>
       <div className='flex flex-col justify-center'>
-        <h2 className="text-lg w-[70%] mx-auto lg:text-3xl font-semibold text-center lg:pl-40 text-red-600">{`What's special about our COMMERCE Programs?`}</h2>
+        <h2 className="text-lg w-[70%] mx-auto lg:text-3xl font-semibold text-center lg:pl-4 text-red-600">{`What's special about our COMMERCE Programs?`}</h2>
         <div className="flex justify-center mb-24">
           <div className="w-[80%] lg:px-12 py-6 sm:h-[750px] md:h-[800px] lg:h-[350px] bg-blue-950 rounded-3xl mt-6 mb-6 lg:flex justify-center items-center text-white">
             <div className="grid justify-center gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
